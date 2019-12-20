@@ -1,0 +1,7 @@
+snp_call.py is a simple SNP calling. 
+It performs SNP calling only for positions with at least 2 fold coverage. For positions with lower fold coverage, it returns "-,-".
+It computes the probability of possible genotypes, and it returns the genotype only if its probability is above 80%, otherwise, it returns "-,-". 
+run it as python snp_call.py [input_file] [output_file]
+
+An example of [input_file] is example_input. It should contain the nucleotides at each position for a sample. 
+An example of [output_file] in example_output. It is the SNP calling results at each position.
